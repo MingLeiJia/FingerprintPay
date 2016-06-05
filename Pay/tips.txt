@@ -1,0 +1,2 @@
+调用DeviceInfo.isisNetworkAvalible() 判断是否有网，进行相关操作
+增加一些包，不全放在一起

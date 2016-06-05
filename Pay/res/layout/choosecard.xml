@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/et_inputname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:hint="@string/inputname"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_inputcardnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_picture_in_picture_black_24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_inputname"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/inputcardnum"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner_inputcard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_inputcardnum"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/bn_choosecard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_inputcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_default"
+        android:text="@string/nextstep" />
+
+</RelativeLayout>

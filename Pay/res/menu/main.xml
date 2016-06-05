@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_finish"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_power_settings_new_black_18dp"
+        android:title="@string/finish"
+        />
+    <item
+        android:id="@+id/action_loginout"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_exit_to_app_black_18dp"
+        android:title="@string/loginout"
+        />
+     <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_info_outline_black_18dp"
+        android:title="@string/about"
+        />
+</menu>

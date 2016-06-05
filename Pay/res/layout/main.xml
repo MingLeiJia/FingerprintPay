@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.epay.slideshow.customview.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bn_wallet"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginLeft="37dp"
+        android:background="@drawable/btn_default"
+        android:text="@string/walletinmain" />
+
+    <Button
+        android:id="@+id/bn_transfer"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/bn_wallet"
+        android:layout_alignBottom="@+id/bn_wallet"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/bn_wallet"
+        android:background="@drawable/btn_default"
+        android:text="@string/Transmoney" />
+
+    <Button
+        android:id="@+id/bn_wealth"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/bn_transfer"
+        android:layout_alignBottom="@+id/bn_transfer"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/bn_transfer"
+        android:background="@drawable/btn_default"
+        android:text="@string/wealth" />
+
+    <Button
+        android:id="@+id/bn_bill"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/bn_wealth"
+        android:layout_alignBottom="@+id/bn_wealth"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/bn_wealth"
+        android:background="@drawable/btn_default"
+        android:text="@string/bill" />
+
+</RelativeLayout>

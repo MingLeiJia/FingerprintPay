@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/底色" >
+
+    <TextView
+        android:id="@+id/tv_showmoneyinwallet"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:textSize="70dp" />
+    <ProgressBar 
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/bn_out"
+            android:layout_width="146dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.39"
+            android:background="@drawable/btn_outin"
+            android:text="@string/moveout" 
+            android:textSize="25dp"
+            android:textColor="@color/蓝色"/>
+
+        <Button
+            android:id="@+id/bn_in"
+            android:layout_width="146dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.39"
+            android:background="@drawable/btn_outin"
+            android:text="@string/movein"
+            android:textSize="25dp" 
+            android:textColor="@color/蓝色"/>
+
+    </LinearLayout>
+
+</LinearLayout>

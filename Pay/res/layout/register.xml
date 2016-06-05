@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:hint="@string/inputnickname"
+        android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_phoneinregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_nickname"
+        android:layout_marginTop="25dp"
+        android:hint="@string/inputphoneregistered"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:inputType="number"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_pwsureinregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/et_pwinregister"
+        android:hint="@string/confirmpw"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bn_nextinregister"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_default"
+        android:layout_below="@+id/et_pwsureinregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/nextstep" />
+
+    <EditText
+        android:id="@+id/et_pwinregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/et_phoneinregister"
+        android:ems="10"
+        android:hint="@string/inputpaypw"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

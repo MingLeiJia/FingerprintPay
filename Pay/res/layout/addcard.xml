@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/et_NameInAddcard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:hint="@string/inputname_cardholder" 
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_CardnumInAddcard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_picture_in_picture_black_24dp"
+        android:layout_alignLeft="@+id/et_NameInAddcard"
+        android:layout_below="@+id/et_NameInAddcard"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/inputcardnum"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner_addcard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_CardnumInAddcard"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/et_PhonenumberInAddcard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:layout_below="@+id/spinner_addcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="@string/inputphone_stored"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bn_NextInAddcard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_default"
+        android:layout_below="@+id/et_PhonenumberInAddcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/nextstep" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/bn_transtoaccount"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_default"
+        android:layout_alignLeft="@+id/bn_transtocard"
+        android:layout_below="@+id/bn_transtocard"
+        android:layout_marginTop="21dp"
+        android:text="@string/transfertoaccount" />
+
+    <Button
+        android:id="@+id/bn_transtofriend"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_default"
+        android:layout_alignLeft="@+id/bn_transtoaccount"
+        android:layout_below="@+id/bn_transtoaccount"
+        android:layout_marginTop="22dp"
+        android:text="@string/transfertofriend" />
+
+    <Button
+        android:id="@+id/bn_nearuse"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@color/绿色"
+        android:layout_below="@+id/bn_transtofriend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/recentuse" />
+
+    <Button
+        android:id="@+id/bn_transtocard"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_default"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/transfertocard" />
+
+</RelativeLayout>

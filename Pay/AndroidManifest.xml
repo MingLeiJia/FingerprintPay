@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.epay.aty"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="com.epay.aty.AtyWelcome"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyLogin"
+            android:label="@string/login">
+        </activity>
+         <activity 
+            android:name="com.epay.aty.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity 
+            android:name="com.epay.aty.AtySubWalletIn"
+            android:label="@string/ActivityIn">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtySubWalletOut"
+            android:label="@string/ActivityOut">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyWallet"
+            android:label="@string/ActivityWallet">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyTransfer"
+            android:label="@string/Transmoney">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyInputContact"
+            android:label="@string/ChooseAccount">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyInputCardID"
+            android:label="@string/ChooseCard">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyContact"
+            android:label="@string/ChooseContact">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyPayToContactOrCard"
+            android:label="@string/Transmoney">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyWealth"
+            android:label="@string/wealth">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyAddCard"
+            android:label="@string/Addcard">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyAddOrDelCard"
+            android:label="@string/AddOrDelCard">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyAddOrDelFingerPrint"
+            android:label="@string/AddOrDelfingerprint">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyPhoneMsgCode"
+            android:label="@string/phonemessage">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyAddFingerPrint"
+            android:label="@string/addfingerprint">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyBill"
+            android:label="@string/bill">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtySetting"
+            android:label="@string/action_settings">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyResetPassword"
+            android:label="@string/resetpw">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyRegister"
+            android:label="@string/register">
+        </activity>
+        <service
+            android:name="com.epay.aty.MyIntentService">
+        </service>
+        <activity 
+            android:name="com.epay.aty.AtyWebView">
+        </activity>
+        <activity 
+            android:name="com.epay.aty.AtyCoupon">
+        </activity>
+    </application>
+
+</manifest>
